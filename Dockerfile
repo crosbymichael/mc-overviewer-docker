@@ -12,4 +12,4 @@ RUN chown -R 1:1 /home/daemon
 ENV HOME=/home/daemon
 USER 1:1
 ENTRYPOINT ["overviewer.py"]
-CMD ["/minecraft/world", "/mcmap"]
+CMD ["--config=/minecraft/overviewer.cfg"]
