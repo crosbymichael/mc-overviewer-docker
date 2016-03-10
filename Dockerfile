@@ -11,5 +11,4 @@ ADD https://s3.amazonaws.com/Minecraft.Download/versions/1.8/1.8.jar /home/daemo
 RUN chown -R 1:1 /home/daemon
 ENV HOME=/home/daemon
 USER 1:1
-ENTRYPOINT ["overviewer.py"]
-CMD ["--config=/minecraft/overviewer.cfg"]
+ENTRYPOINT ["/bin/bash", "-c","overviewer.py --config=/minecraft/overviewer.cfg;overviewer.py --config=/minecraft/overviewer.cfg --genpoi"]
