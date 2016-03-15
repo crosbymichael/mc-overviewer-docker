@@ -20,6 +20,9 @@ worlds["survival"] = "/minecraft/world"
 outputdir = "/mcmap"
 ```
 
+In addition to the basic map generation, this docker will run twice. The first pass generates the map
+while the second pass will read through the config for any POIs defined (Players, signs, towns, etc...)
+
 Here is an example of running Overviewer:
 
 ```bash
